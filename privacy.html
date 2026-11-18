@@ -10,10 +10,12 @@
 <h2>App PIN and Face ID</h2>
 <p>The app requires a 4–6 digit PIN that you choose. Only a salted SHA-256 hash of it is stored, in the Keychain of each device (device-only; never in iCloud, never sent anywhere). You can optionally use Face ID as a shortcut. Face ID is handled entirely by iOS (Apple's LocalAuthentication); the app never receives or stores biometric data.</p>
 <h2>Location and weather (Disguise mode only)</h2>
-<p>Disguise mode is off by default. If you turn it on, the app opens to a weather radar map and asks for your location <strong>while the app is in use</strong> only. Your location is used on your device to center the map and is <strong>never collected, stored, or sent to the developer</strong>.
-- To show current conditions, the app sends your coordinates to <strong>Apple's WeatherKit</strong> service, and to Apple's map and place-name (geocoding) services. Apple says WeatherKit uses location only to provide weather data and doesn't link it to your Apple ID; see Apple's privacy policy at apple.com/legal/privacy.
-- The radar overlay images are downloaded from the U.S. <strong>NOAA/National Weather Service nowCOAST</strong> service. Those requests contain only the map area being viewed (map tile boundaries), not your exact location or any identifier, but like any web request they reveal your IP address to NOAA's servers.
-- You can turn off Disguise mode or deny location at any time (the map then works without centering on you).</p>
+<p>Disguise mode is off by default. If you turn it on, the app opens to a weather radar map and asks for your location <strong>while the app is in use</strong> only. Your location is used on your device to center the map and is <strong>never collected, stored, or sent to the developer</strong>.</p>
+<ul>
+<li>To show current conditions, the app sends your coordinates to <strong>Apple's WeatherKit</strong> service, and to Apple's map and place-name (geocoding) services. Apple says WeatherKit uses location only to provide weather data and doesn't link it to your Apple ID; see Apple's privacy policy at apple.com/legal/privacy.</li>
+<li>The radar overlay images are downloaded from the U.S. <strong>NOAA/National Weather Service nowCOAST</strong> service. Those requests contain only the map area being viewed (map tile boundaries), not your exact location or any identifier, but like any web request they reveal your IP address to NOAA's servers.</li>
+<li>You can turn off Disguise mode or deny location at any time (the map then works without centering on you).</li>
+</ul>
 <h2>Notifications</h2>
 <p>The app doesn't send notifications. If it ever does, they will contain only generic text (no names or details).</p>
 <h2>Purchases</h2>
